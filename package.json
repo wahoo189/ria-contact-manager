@@ -7,13 +7,17 @@
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.11",
+    "stylelint": "^8.0.0",
+    "stylelint-config-standard": "^17.0.0",
     "uuid": "^3.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint:css": "stylelint ./src/**/*.{css,less,sass,scss,styl}",
+    "lint:js": "eslint ./src/**/*.{js,jsx}"
   },
   "eslintConfig": {
     "env": {

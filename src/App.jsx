@@ -10,7 +10,6 @@ class App extends Component {
     api.getCats().then(cats => this.setState({ cats }));
   }
 
-
   handleSubmit = (cat) => {
     cat.preventDefault();
 
@@ -20,10 +19,7 @@ class App extends Component {
       name: name.value,
       img: img.value,
     })
-      .then((cats) => {
-        console.log('cats came back', cats);
-        this.setState({ cats });
-      });
+      .then(cats => this.setState({ cats }));
   };
 
   render() {
