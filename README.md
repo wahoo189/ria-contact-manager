@@ -1,10 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app) with some _minor_ tweaks. Those details can be found in the [Table of Contents](#table-of-contents).
+
+## Assignment
+
+The project is a bare-bones, no-frills contact manager..._but with cats_. You get a list of cats, and you have a form to add a new cat. There are no tricks here. It's a working app with some strict rule enforcements on the code side, but it needs some UX attention. You're tasked with finding ways of making this app..._neater_. 
+
+### Minimum Goals
+
+* Style the sections (cat list, cat form) _any way you see fit, using any method you prefer_.
+* Think of features that would delight the user _(or areas where QA would thrash you if you submitted it in its current form)_.
+* Treat it like an app real customers are going to use and real developers are going to maintain. _And pretend they all know where you sit_.
+* Be prepared to converse (or defend) your decisions. Code comments really help with recall.
+* Bonus points if you can prove your code with tests.
+* When you're ready, submit a PR back to the repo.
+
+### Getting Started
+
+1. Pull down the repo.
+1. Run `npm install`.
+1. Run `npm start`.
+1. Profit.
 
 Below you will find some information on how to perform common tasks.<br>
-You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
+
+-------------------------------------
 
 ## Table of Contents
 
+- [Customizations to `packages.json`](#customizations-to-package-json)
+- [Style Guides](#style-guide)
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)
 - [Folder Structure](#folder-structure)
@@ -95,6 +118,35 @@ You can find the most recent version of this guide [here](https://github.com/fac
   - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
   - [Moment.js locales are missing](#momentjs-locales-are-missing)
 - [Something Missing?](#something-missing)
+
+## <a id="customizations-to-package-json"></a> Customizations to `packages.json`
+
+```
+  "dependencies": {
+    "eslint-config-airbnb": "^15.1.0",
+  },
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "extends": "airbnb",
+    "parser": "babel-eslint"
+  },
+  "eslintIgnore": [
+    "registerServiceWorker.js"
+  ]
+```
+
+## Style Guides
+
+This is one of the customizations we've made to the stock Create React App project.
+
+* Stylelint for CSS
+  * We use stylelint for linting our CSS rules. We've opted for the rules provided by [stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard) which takes rules from Google, AirBnB, and other community methodologies.
+* Eslint for CSS
+  * We use eslint for linting our JS(X) rules. We've opted for the stock rules provided by [AirBnb's JS rules](https://github.com/airbnb/javascript).
+
 
 ## Updating to New Releases
 
