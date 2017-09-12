@@ -27,7 +27,7 @@ Below you will find some information on how to perform common tasks.<br>
 ## Table of Contents
 
 - [Customizations to `packages.json`](#customizations-to-package-json)
-- [Style Guides](#style-guide)
+- [Style Guides](#style-guides)
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)
 - [Folder Structure](#folder-structure)
