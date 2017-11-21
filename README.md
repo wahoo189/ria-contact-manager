@@ -11,16 +11,22 @@ The project is a bare-bones, no-frills contact manager..._but with cats_. You ge
 * Treat it like an app real customers are going to use and real developers are going to maintain. _And pretend they all know where you sit_.
 * Be prepared to converse (or defend) your decisions. Code comments really help with recall.
 * Bonus points if you can prove your code with tests.
-* When you're ready, submit a PR back to the repo.
 
 ### Getting Started
 
-1. Pull down the repo.
+1. Fork the repo to your own publicly-accessible git repo _(Github, Bitbucket, Gitlab, etc)_.
+1. Clone the repo to your machine.
+1. `cd` into the `Contact-Manager` directory.
+1. Create a new `review` branch.
 1. Run `npm install`.
 1. Run `npm start`.
 1. Profit.
 
-Below you will find some information on how to perform common tasks.<br>
+### When You're Ready for Review
+1. Create a PR from the `review` branch against your pristine `master` branch.
+1. Send us the link to the PR.
+
+You can find linting rules and other information related to the [create-react-app](https://github.com/facebookincubator/create-react-app) boilerplate project listed below.
 
 -------------------------------------
 
